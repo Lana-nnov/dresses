@@ -1,0 +1,35 @@
+.user-actions {
+    list-style: none;
+    margin-right: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.user-actions__item:not(:first-child) {
+    margin-left: 49px;
+}
+
+.user-actions__link {
+    position: relative;
+
+    &:hover {
+        svg {
+            opacity: 0.5;
+        }
+    }
+}
+
+.user-actions__link-content {
+    position: absolute;
+    bottom: 0;
+    right: -5px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    font-size: 10px;
+    line-height: 16px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #E1CDA6;
+}

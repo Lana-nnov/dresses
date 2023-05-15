@@ -1,0 +1,26 @@
+.objects__slider {
+    position: relative;
+
+    &::before {
+        content: "";
+        width: 100%;
+        height: 108px;
+        position: absolute;
+        bottom: -47px;
+        left: 0;
+        //background-color: red;
+        background-image: url("../img/line.svg");
+        background-repeat: repeat-x;
+        z-index: 100;
+    }
+}
+
+.objects__slide {
+    width: 250px;
+}
+
+@media (min-width: $tablet-width) {
+    .objects__slide {
+        width: auto;
+    }
+}    

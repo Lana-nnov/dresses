@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
+    <link rel="preload" href="./fonts/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/oswaldmedium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/normalize.css">    
+    <link rel="stylesheet" href="css/slick.css">
+    <link href="css/style.min.css" rel="stylesheet">
+    <title>Магазин женской одежды</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="main-nav container">        
+        <ul class="main-nav__navigation navigation">
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">женщинам</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">мужчинам</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">аксессуары</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">новинки</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">коллекции</a>
+          </li>
+        </ul>
+        <form class="main-nav__search search" action="action_page.php">
+            <input class="search__input" type="text" placeholder="Поиск" name="search">
+            <button class="search__btn" type="submit"></button>
+        </form>
+        <ul class="main-nav__actions user-actions">
+          <li class="user-actions__item">
+            <a class="user-actions__link user-actions__user" href="#" aria-label="Пользователь">
+              <svg height="21.15" width="20.11">
+                <use xlink:href="img/sprite.svg#icon-user"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="user-actions__item">
+            <a class="user-actions__link user-actions__favorite" href="#" aria-label="Избранное">
+              <svg height="21.74" width="18.82">
+                <use xlink:href="img/sprite.svg#icon-favorite"></use>                
+              </svg>
+              <span class="visually-hidden">Избранное</span>
+              <span class="user-actions__link-content">8</span>
+            </a>
+          </li>
+          <li class="user-actions__item">
+            <a class="user-actions__link user-actions__cart" href="#" aria-label="Корзина">
+              <svg height="22.3" width="22.7">
+                <use xlink:href="img/sprite.svg#icon-busket"></use>                
+              </svg>
+              <span class="visually-hidden">Корзина</span>
+              <span class="user-actions__link-content">6</span>
+            </a>
+          </li>
+        </ul>
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+      </nav>
+    </header>
+    <main class="main">      
+      <section class="notice">
+        <div class="notice__slider slider">
+          <div class="notice__slide"> 
+            
+          </div>            
+          <div class="notice__slide">             
+                   
+          </div>
+          <div class="notice__slide">             
+                        
+          </div>
+        </div>  
+      </section>   
+
+      <section class="objects">
+        <div class="tabs__slider tabs">
+          <div class="tabs__slide"><span>лето</span>
+          </div>  
+          <div class="tabs__slide"><span>путешествие</span>
+          </div>
+          <div class="tabs__slide"><span>коллекции</span>
+          </div>
+          <div class="tabs__slide"><span>новинки</span>
+          </div>
+          <div class="tabs__slide"><span>скидки</span>
+          </div>
+          <div class="tabs__slide"><span>лукбук</span>            
+          </div>
+        </div>  
+        <div class="objects__slider">
+          <div class="objects__slide"> 
+            <picture>                             
+              <source type="image/webp" srcset="img/card1.webp, img/card1@2x.webp 2x">              
+              <img class="object__image" src="img/card1.jpg" srcset="img/card1@2x.jpg 2x" alt=""> 
+            </picture>             
+          </div>            
+          <div class="objects__slide"> 
+            <picture>                             
+              <source type="image/webp" srcset="img/card2.webp, img/card2@2x.webp 2x">              
+              <img class="object__image" src="img/card2.jpg" srcset="img/card2@2x.jpg 2x" alt=""> 
+            </picture>    
+          </div>
+          <div class="objects__slide">             
+            <picture>                             
+              <source type="image/webp" srcset="img/card3.webp, img/card3@2x.webp 2x">              
+              <img class="object__image" src="img/card3.jpg" srcset="img/card3@2x.jpg 2x" alt=""> 
+            </picture>             
+          </div>
+          <div class="objects__slide">             
+            <picture>                             
+              <source type="image/webp" srcset="img/card4.webp, img/card4@2x.webp 2x">              
+              <img class="object__image" src="img/card4.jpg" srcset="img/card4@2x.jpg 2x" alt=""> 
+            </picture>             
+          </div>
+          <div class="objects__slide">             
+            <picture>                             
+              <source type="image/webp" srcset="img/card5.webp, img/card5@2x.webp 2x">              
+              <img class="object__image" src="img/card5.jpg" srcset="img/card5@2x.jpg 2x" alt=""> 
+            </picture>             
+          </div>
+          <div class="objects__slide">             
+            <picture>                             
+              <source type="image/webp" srcset="img/card6.webp, img/card6@2x.webp 2x">              
+              <img class="object__image" src="img/card6.jpg" srcset="img/card6@2x.jpg 2x" alt=""> 
+            </picture>             
+          </div>
+        </div>  
+      </section>  
+      <section class="cards">
+        <h2 class="cards__title">Откройте для себя новинки сезона</h2>
+        <div class="cards__wrap">
+          <div class="cards__text">
+            <a class="cards__link" href="#" aria-label="Смотреть все">Перейти в каталог</a>
+          </div>        
+          <div class="cards__slider">
+            <div class="cards__slide">   
+              <article class="card card--new">
+                <div class="card__attributes">
+                  <button class="favorite" title="Добавить в избранное" type="button" tabindex="0">
+                    <span class="visually-hidden">
+                      Добавить в избранное
+                    </span>
+                  </button>
+                </div>          
+                  <picture>
+                    <source type="image/webp" srcset="img/item1.webp 1x, img/item1@2x.webp 2x">
+                    <source type="image/jpeg" srcset="img/item1.jpg 1x, img/item1@2x.jpg 2x">
+                    <img class="card__image" src="img/item1.jpg" alt="" height="585" width="415">
+                  </picture>
+                  <h3 class="card__title">Платье-рубашка виск атлас</h3>
+                  <p class="card__price">12 700р.</p>
+                  <p class="card__old-price"></p>
+                  <div class="card__link">
+                    <form class="card__options" method="POST">                  
+                      <ul class="card__option-list">
+                        <li class="card__option-item">
+                          <input class="card__input-radio" id="xxs__field-1" type="radio" name="size" value="xxs-1">
+                          <label class="card__radio" for="xxs__field-1">xxs</label>
+                        </li>
+                        <li class="card__option-item">
+                          <input class="card__input-radio" id="xs__field-1" type="radio" name="size" value="xs-1"
+                            checked>
+                          <label class="card__radio" for="xs__field-1">xs</label>
+                        </li>
+                        <li class="card__option-item">
+                          <input class="card__input-radio" id="s__field-1" type="radio" name="size" value="s-1"
+                            checked>
+                          <label class="card__radio" for="s__field-1">s</label>
+                        </li>
+                        <li class="card__option-item card__option-item--no-presence">
+                          <input class="card__input-radio" id="m__field-1" type="radio" name="size" value="m-1"
+                            disabled>
+                          <label class="card__radio" for="m__field-1">m</label>
+                        </li>
+                        <li class="card__option-item">
+                          <input class="card__input-radio" id="l__field-1" type="radio" name="size" value="l-1"
+                            checked>
+                          <label class="card__radio" for="l__field-1">l</label>
+                        </li>
+                        <li class="card__option-item">
+                          <input class="card__input-radio" id="xl__field-1" type="radio" name="size" value="xl-1"
+                            checked>
+                          <label class="card__radio" for="xl__field-1">xl</label>
+                        </li>
+                        <li class="card__option-item">
+                          <input class="card__input-radio" id="xxl__field-1" type="radio" name="size" value="xxl-1"
+                            checked>
+                          <label class="card__radio" for="xxl__field-1">xxl</label>
+                        </li>                    
+                      </ul>                 
+                      <button class="card__button button" type="submit" tabindex="0">
+                        в корзину
+                        <svg height="22.3" width="22.7">
+                          <use xlink:href="img/sprite.svg#icon-busket"></use>
+                        </svg>
+                      </button>
+                    </form>
+                  </div>                  
+              </article>                
+            </div>
+            <div class="cards__slide">   
+              <article class="card card--new">
+                <div class="card__attributes">
+                  <button class="favorite" title="Добавить в избранное" type="button" tabindex="0">
+                    <span class="visually-hidden">
+                      Добавить в избранное
+                    </span>
+                  </button>
+                </div>    
+                <div class="card__inner-slider">
+                  <div class="card__inner__slide">                   
+                    <picture>
+                      <source type="image/webp" srcset="img/item2.webp 1x, img/item2@2x.webp 2x">
+                      <source type="image/jpeg" srcset="img/item2.jpg 1x, img/item2@2x.jpg 2x">
+                      <img class="card__image" src="img/item2.jpg" alt="" height="585" width="415">
+                    </picture>
+                  </div>
+                  <div class="card__inner__slide">                    
+                    <picture>
+                      <source type="image/webp" srcset="img/item2-2.webp 1x, img/item2-2@2x.webp 2x">
+                      <source type="image/jpeg" srcset="img/item2-2.jpg 1x, img/item2-2@2x.jpg 2x">
+                      <img class="card__image" src="img/item2-2.jpg" alt="" height="585" width="415">
+                    </picture>
+                  </div>
+                </div>  
+                  <h3 class="card__title">Юбка миди 2 полоска</h3>
+                  <p class="card__price">4 400р.</p>
+                  <p class="card__old-price"></p>
+                  <div class="card__link">
+                    <form class="card__options" method="POST">                  
+                      <ul class="card__option-list">
+                        <li class="card__option-item">
+                          <input class="card__input-radio" id="xxs__field-2" type="radio" name="size" value="xxs-2"
+                            checked>
+                          <label class="card__radio" for="xxs__field-2">xxs</label>
+                        </li>
+                        <li class="card__option-item card__option-item--no-presence">
+                          <input class="card__input-radio" id="xs__field-2" type="radio" name="size" value="xs-2"
+                            disabled>
+                          <label class="card__radio" for="xs__field-2">xs</label>
+                        </li>
+                        <li class="card__option-item card__option-item--no-presence">
+                          <input class="card__input-radio" id="s__field-2" type="radio" name="size" value="s-2"
+                            disabled>
+                          <label class="card__radio" for="s__field-2">s</label>
+                        </li>
+                        <li class="card__option-item">
+                          <input class="card__input-radio" id="m__field-2" type="radio" name="size" value="m-2"
+                            checked>
+                          <label class="card__radio" for="m__field-2">m</label>
+                        </li>
+                        <li class="card__option-item">
+                          <input class="card__input-radio" id="l__field-2" type="radio" name="size" value="l-2"
+                            checked>
+                          <label class="card__radio" for="l__field-2">l</label>
+                        </li>
+                        <li class="card__option-item card__option-item--no-presence">
+                          <input class="card__input-radio" id="xl__field-2" type="radio" name="size" value="xl-2"
+                            disabled>
+                          <label class="card__radio" for="xl__field-2">xl</label>
+                        </li>
+                        <li class="card__option-item">
+                          <input class="card__input-radio" id="xxl__field-2" type="radio" name="size" value="xxl-2"
+                            checked>
+                          <label class="card__radio" for="xxl__field-2">xxl</label>
+                        </li>                    
+                      </ul>                 
+                      <button class="card__button button" type="submit" tabindex="0">
+                        в корзину 
+                        <svg height="22.3" width="22.7">
+                          <use xlink:href="img/sprite.svg#icon-busket"></use>
+                        </svg>                     
+                      </button>
+                    </form>
+                  </div>                  
+              </article>                
+            </div>
+            <div class="cards__slide">   
+              <article class="card card--new">
+                <div class="card__attributes">
+                  <button class="favorite" title="Добавить в избранное" type="button" tabindex="0">
+                    <span class="visually-hidden">
+                      Добавить в избранное
+                    </span>
+                  </button>
+                </div>          
+                  <picture>
+                    <source type="image/webp" srcset="img/item3.webp 1x, img/item3@2x.webp 2x">
+                    <source type="image/jpeg" srcset="img/item3.jpg 1x, img/item3@2x.jpg 2x">
+                    <img class="card__image" src="img/item3.jpg" alt="" height="585" width="415">
+                  </picture>
+                  <h3 class="card__title">Платье-рубашка виск атлас</h3>
+                  <p class="card__price">12 700р.</p>
+                  <p class="card__old-price"></p>
+                  <div class="card__link">
+                    <form class="card__options" method="POST">                  
+                      <ul class="card__option-list">
+                        <li class="card__option-item card__option-item--no-presence">
+                          <input class="card__input-radio" id="xxs__field-3" type="radio" name="size" value="xxs-3" disabled>
+                          <label class="card__radio" for="xxs__field-3">xxs</label>
+                        </li>
+                        <li class="card__option-item">
+                          <input class="card__input-radio" id="xs__field-3" type="radio" name="size" value="xs-3"
+                            checked>
+                          <label class="card__radio" for="xs__field-3">xs</label>
+                        </li>
+                        <li class="card__option-item">
+                          <input class="card__input-radio" id="s__field-3" type="radio" name="size" value="s-3"
+                            checked>
+                          <label class="card__radio" for="s__field-3">s</label>
+                        </li>
+                        <li class="card__option-item">
+                          <input class="card__input-radio" id="m__field-3" type="radio" name="size" value="m-3"
+                            checked>
+                          <label class="card__radio" for="m__field-3">m</label>
+                        </li>
+                        <li class="card__option-item">
+                          <input class="card__input-radio" id="l__field-3" type="radio" name="size" value="l-3"
+                            checked>
+                          <label class="card__radio" for="l__field-3">l</label>
+                        </li>
+                        <li class="card__option-item">
+                          <input class="card__input-radio" id="xl__field-3" type="radio" name="size" value="xl-3"
+                            checked>
+                          <label class="card__radio" for="xl__field-3">xl</label>
+                        </li>
+                        <li class="card__option-item card__option-item--no-presence">
+                          <input class="card__input-radio" id="xxl__field-3" type="radio" name="size" value="xxl-3" disabled>
+                          <label class="card__radio" for="xxl__field-3">xxl</label>
+                        </li>                    
+                      </ul>                 
+                      <button class="card__button button" type="submit" tabindex="0">
+                        в корзину
+                        <svg height="22.3" width="22.7">
+                          <use xlink:href="img/sprite.svg#icon-busket"></use>
+                        </svg>
+                      </button>
+                    </form>
+                  </div>                  
+              </article>                
+            </div>
+            <div class="cards__slide">   
+              <article class="card card--new">
+                <div class="card__attributes">
+                  <button class="favorite" title="Добавить в избранное" type="button" tabindex="0">
+                    <span class="visually-hidden">
+                      Добавить в избранное
+                    </span>
+                  </button>
+                </div>          
+                  <picture>
+                    <source type="image/webp" srcset="img/item4.webp 1x, img/item4@2x.webp 2x">
+                    <source type="image/jpeg" srcset="img/item4.jpg 1x, img/item4@2x.jpg 2x">
+                    <img class="card__image" src="img/item4.jpg" alt="" height="585" width="415">
+                  </picture>
+                  <h3 class="card__title">Платье-рубашка с карманами миди</h3>
+                  <p class="card__old-price">12900</p>
+                  <p class="card__price">8 900р.</p>                  
+                  <div class="card__link">
+                    <form class="card__options" method="POST">                  
+                      <ul class="card__option-list">
+                        <li class="card__option-item">
+                          <input class="card__input-radio" id="xxs__field-4" type="radio" name="size" value="xxs-4"
+                            checked>
+                          <label class="card__radio" for="xxs__field-4">xxs</label>
+                        </li>
+                        <li class="card__option-item">
+                          <input class="card__input-radio" id="xs__field-4" type="radio" name="size" value="xs-4"
+                            checked>
+                          <label class="card__radio" for="xs__field-4">xs</label>
+                        </li>
+                        <li class="card__option-item">
+                          <input class="card__input-radio" id="s__field-4" type="radio" name="size" value="s-4"
+                            checked>
+                          <label class="card__radio" for="s__field-4">s</label>
+                        </li>
+                        <li class="card__option-item">
+                          <input class="card__input-radio" id="m__field-4" type="radio" name="size" value="m-4"
+                            checked>
+                          <label class="card__radio" for="m__field-4">m</label>
+                        </li>
+                        <li class="card__option-item">
+                          <input class="card__input-radio" id="l__field-4" type="radio" name="size" value="l-4"
+                            checked>
+                          <label class="card__radio" for="l__field-4">l</label>
+                        </li>
+                        <li class="card__option-item">
+                          <input class="card__input-radio" id="xl__field-4" type="radio" name="size" value="xl-4"
+                            checked>
+                          <label class="card__radio" for="xl__field-4">xl</label>
+                        </li>
+                        <li class="card__option-item">
+                          <input class="card__input-radio" id="xxl__field-4" type="radio" name="size" value="xxl-4"
+                            checked>
+                          <label class="card__radio" for="xxl__field-4">xxl</label>
+                        </li>                    
+                      </ul>                 
+                      <button class="card__button button" type="submit" tabindex="0">
+                        в корзину
+                        <svg height="22.3" width="22.7">
+                          <use xlink:href="img/sprite.svg#icon-busket"></use>
+                        </svg>
+                      </button>
+                    </form>
+                  </div>                  
+              </article>                
+            </div>  
+            <div class="cards__slide">   
+              <article class="card card--new">
+                <div class="card__attributes">
+                  <button class="favorite" title="Добавить в избранное" type="button" tabindex="0">
+                    <span class="visually-hidden">
+                      Добавить в избранное
+                    </span>
+                  </button>
+                </div>          
+                  <picture>
+                    <source type="image/webp" srcset="img/item1.webp 1x, img/item1@2x.webp 2x">
+                    <source type="image/jpeg" srcset="img/item1.jpg 1x, img/item1@2x.jpg 2x">
+                    <img class="card__image" src="img/item1.jpg" alt="" height="585" width="415">
+                  </picture>
+                  <h3 class="card__title">Платье-рубашка виск атлас</h3>
+                  <p class="card__price">12 700р.</p>
+                  <p class="card__old-price"></p>
+                  <div class="card__link">
+                    <form class="card__options" method="POST">                  
+                      <ul class="card__option-list">
+                        <li class="card__option-item">
+                          <input class="card__input-radio" id="xxs__field" type="radio" name="size" value="xxs"
+                            checked>
+                          <label class="card__radio" for="xxs__field">xxs</label>
+                        </li>
+                        <li class="card__option-item">
+                          <input class="card__input-radio" id="xs__field" type="radio" name="size" value="xs"
+                            checked>
+                          <label class="card__radio" for="xs__field">xs</label>
+                        </li>
+                        <li class="card__option-item">
+                          <input class="card__input-radio" id="s__field" type="radio" name="size" value="s"
+                            checked>
+                          <label class="card__radio" for="s__field">s</label>
+                        </li>
+                        <li class="card__option-item">
+                          <input class="card__input-radio" id="m__field" type="radio" name="size" value="m"
+                            checked>
+                          <label class="card__radio" for="m__field">m</label>
+                        </li>
+                        <li class="card__option-item">
+                          <input class="card__input-radio" id="l__field" type="radio" name="size" value="l"
+                            checked>
+                          <label class="card__radio" for="l__field">l</label>
+                        </li>
+                        <li class="card__option-item">
+                          <input class="card__input-radio" id="xl__field" type="radio" name="size" value="xl"
+                            checked>
+                          <label class="card__radio" for="xl__field">xl</label>
+                        </li>
+                        <li class="card__option-item">
+                          <input class="card__input-radio" id="xxl__field" type="radio" name="size" value="xxl"
+                            checked>
+                          <label class="card__radio" for="xxl__field">xxl</label>
+                        </li>                    
+                      </ul>                 
+                      <button class="card__button button" type="submit" tabindex="0">
+                        в корзину
+                        <svg height="22.3" width="22.7">
+                          <use xlink:href="img/sprite.svg#icon-busket"></use>
+                        </svg>
+                      </button>
+                    </form>
+                  </div>                  
+              </article>                
+            </div>          
+          </div>
+        </div>     
+      </section>
+      
+    </main>   
+    <script src="js/vendor/jquery-3.4.1.slim.js"></script>
+    <script src="js/vendor/slick.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,183 @@
+.card {
+    position: relative;
+    //width: 415px;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+
+    &:hover {
+        box-shadow: 0 0 15px rgba(0,0,0,0.2);
+
+        .card__link {
+            display: block;
+        }
+    }
+}
+
+.card--new {
+    &::before {
+        content: "Новинка";
+        position: absolute;
+        right: 0;
+        bottom: 45px;
+        width: 81px;
+        height: 24px;
+        font-size: 11px;
+        line-height: 24px;
+        text-transform: uppercase;
+        text-align: center;
+        color: #000000;
+        background-color: #80BDEE;
+    }
+}
+
+.card__title {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 14px;
+}
+
+.card__price {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+.card__old-price {
+    margin: 0;
+    margin-right: 23px;
+    padding: 0;
+    display: inline-block;
+    color: #AAC4E1;
+    text-decoration: line-through;
+}
+
+.card__image {
+    display: block;
+    margin: 0 auto;
+}
+
+.card__link {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 75px;
+    padding: 12px 0 0;
+    background-color: #ffffff;
+}
+
+.card__option-list {
+    list-style: none;
+    //width: 270px;
+    margin-top: 0;  
+    margin-bottom: 6px;  
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card__input-radio {
+    display: none;
+}
+
+.card__input-radio+.card__radio {
+    font-size: 12px;
+    line-height: 22px;
+    text-align: center;
+    width: 28px;
+    box-sizing: border-box;
+    color: #000000;
+}
+
+.card__input-radio+.card__radio {
+    position: relative;
+    display: block;
+    cursor: pointer;
+}
+
+.card__input-radio+.card__radio::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 22px;
+    width: 30px;
+    border-radius: 0;
+}
+
+.card__input-radio:checked+.card__radio::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 22px;
+    width: 30px;
+    border-radius: 0;
+    border: 1px solid #303030;
+}
+
+.card__button {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;  
+    text-align: center;
+    background-color: #ffffff;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: none;
+    font-size: 14px;
+    line-height: 14px;
+    text-transform: uppercase;
+    overflow: hidden;
+    z-index: 1;
+    color: #000000;
+
+    svg {
+        margin-left: 3px;
+    }
+}
+
+.card__option-item--no-presence .card__radio {
+   color: rgba(0, 0, 0, 0.3);
+}
+
+.card__inner-slider .slick-dots {
+   bottom: -53px;
+   text-align: right;
+
+    button {
+        height: 18px;
+        width: 18px;
+        padding: 0;
+        //background-color: #ffffff;
+        border-radius: 50%;
+    }    
+
+    li {
+        margin: 0 2px;
+    }
+
+    li:first-child>button {
+        background-color: #C4C4C4;
+    }
+
+    li:nth-child(2)>button {
+        background-color: #E1CDA6;
+    }
+
+    li:last-child {
+        margin-right: 20px;
+    }
+    
+}
+
+.slick-dotted.card__inner-slider {
+    margin-bottom: 0;
+}
+

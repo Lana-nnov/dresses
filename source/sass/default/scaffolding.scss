@@ -1,0 +1,34 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 280px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  color: #000000;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 300;
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+textarea,
+button {
+  font: inherit;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

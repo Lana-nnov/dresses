@@ -1,0 +1,126 @@
+.cards {
+    padding-top: 85px;
+}
+
+.cards__slide {    
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 414px;
+}
+
+.cards__wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.cards__text {
+    padding-left: 25px;    
+    margin-bottom: 20px;
+}
+
+.cards__link {    
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.cards__slider {    
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.cards__slider .slick-prev {
+    left: auto;
+    right: 132px;
+    top: -50px;
+    z-index: 100;
+    background-image: url("../img/icon-arrow-prev.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &::before {       
+        content: "";
+    }
+
+    &:hover {
+        opacity: 0.5;
+    }
+}
+
+.cards__slider .slick-next {
+    right: 83px;
+    top: -50px;
+    z-index: 100;    
+    background-image: url("../img/icon-arrow-next.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &::before {       
+        content: "";
+    }
+
+    &:hover {
+        opacity: 0.5;
+    }
+}
+
+.cards__title {
+    display: block;
+    margin: 0 auto 50px;
+    max-width: 280px;
+    font-size: 20px;
+    line-height: 26px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+    .cards__wrap {
+        flex-direction: row;
+    }
+
+    .cards__text {
+        position: relative;
+        width: 212px;
+        margin-bottom: 0;
+        padding-left: 0;
+    }
+
+    .cards__title {
+        font-size: 24px;
+        line-height: 31px;
+        margin: 0 auto 70px;
+    }
+
+    .cards__slider .slick-prev {
+        top: -70px;
+    }  
+    
+    .cards__slider .slick-next {
+        top: -70px;
+    } 
+
+    .cards__link {
+        position: absolute;
+        left: 55px;
+        top: 72%;
+        transform: rotate(-90deg);
+    
+        &::before {
+            content: "";
+            position: absolute;
+            width: 9px;
+            height: 6px;
+            top: 6px;
+            right: -15px;
+            background-image: url("../img/arrow-small.svg");
+            transform: rotate(90deg);
+        }
+    }
+
+    .cards__slider {
+        width: calc(100% - 212px);
+    }    
+}    
+

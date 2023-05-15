@@ -1,0 +1,14 @@
+.tabs__slide {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    width: 250px;
+    padding-left: 17px;
+    box-sizing: border-box;
+    text-transform: uppercase;
+} 
+
+@media (min-width: $tablet-width) {
+    .tabs__slide {
+        width: 322px;
+    }
+}    
